@@ -70,5 +70,8 @@ def kk_route():
     img_base64 = base64.b64encode(img_encoded).decode('utf-8')  # Convert bytes to base64 string
     cv2.imshow("", result_image)
     cv2.waitKey(0)
+@app.route('/hello')
+def ll_route():
+    return"hello"
 if __name__ == '__main__':
     app.run(debug=True)
